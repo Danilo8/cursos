@@ -14,6 +14,28 @@ class Admin {
         $this->DB = $connection->getConnection();
     }
 
+    public function Insert()
+    {
+        
+    }
+
+    public function Select($id)
+    {
+        $sql = "SELECT * FROM administrators WHERE id = '$id'";
+        $result = mysqli_query($this->DB, $sql);
+        return $result;  
+    }
+
+    public function Update()
+    {
+        
+    }
+
+    public function Delete()
+    {
+        
+    }
+
     public function Auth($email, $senha)
     {
         $cipSenha = md5($senha);

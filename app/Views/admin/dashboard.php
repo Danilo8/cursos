@@ -30,5 +30,9 @@
     </head>
     <body>
         <?php include 'app/views/templates/dashboard.php'?>
+
+        <!--JS files-->
+        <script src="http://<?=DOMINIO?>/public/js/popper.js"></script>
+        <script src="http://<?=DOMINIO?>/public/js/bootstrap.js"></script>
     </body>
 </html>

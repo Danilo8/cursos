@@ -10,6 +10,8 @@ class AdminController {
 
     public function __construct(Type $var = null)
     {
+        session_start();
+        
         $this->model = new Admin();
         
         if (isset($_POST)) {
@@ -17,6 +19,28 @@ class AdminController {
                 $this->logar();
             }
         }
+    }
+
+    public function Insert()
+    {
+        
+    }
+
+    public function Select()
+    {
+        $result = $this->model->Select($_SESSION['admin']);
+        $row = $result->fetch_assoc();
+        return $row;
+    }
+
+    public function Update()
+    {
+        
+    }
+
+    public function Delete()
+    {
+        
     }
 
     public function logar()
@@ -30,6 +54,12 @@ class AdminController {
         } else {
             
         }        
+    }
+
+    public function logout()
+    {
+        session_destroy();
+        $this->redirect('http://'.DOMINIO.'/admin/login');
     }
 
     public function redirect($to)

@@ -1,3 +1,14 @@
+<?php
+    use app\Controllers\AdminController;
+    $admin = new AdminController();
+
+    if(!isset($_SESSION['admin'])){
+        $admin->redirect('http://'.DOMINIO.'/admin/login/usuario-nao-autenticado');
+     }
+     if(isset($route->Link) && $route->Link == 'logout'){
+        $admin->logout();
+     }
+?>
 <!--Estrutura do Template-->
 <nav class="navbar navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1 mr-0">
@@ -5,7 +16,8 @@
     </span>
     <ul class="nav justify-content-center">
         <h3 class="text-white">
-            ADMINISTRADOR
+            <?php $select = $admin->Select() ?>
+            <?= $select["name"] ?>
         </h3>
     </ul>
     <ul class="nav justify-content-end">                
