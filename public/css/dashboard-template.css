@@ -1,0 +1,101 @@
+.navbar-brand {
+    margin-left: 2%;
+}
+#logo-text {
+    font-family: 'Copse', sans-serif;
+    font-size: 30px;
+    color: white;
+    vertical-align: bottom;
+}
+.navbar-text a span {
+    font-size: 20px;
+}
+.nav-link {
+    color: #ffffff;
+    border-bottom: 4px solid transparent;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 4.5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1.5px; 
+}
+.nav-link:hover, .active {
+    color: #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+#logout {
+    color: #FF0000;
+}
+body {
+    background-color: #f1f2f7;
+}
+.card {
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.10);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.10);
+    box-shadow: 0 1px 2px rgba(0,0,0,.10);
+    border: 1px solid rgba(0,0,0,.2); 
+    border-radius: 0;
+    color: black;
+}
+.card-header {
+    font-size: 18px;
+}
+.card-footer{
+    background-color: #fff;
+}
+.form-control {
+    border-radius: 1rem;
+}
+.list-group .active {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #FF0000;
+    border-left: 5px solid #FF0000;
+    border-radius: 0;
+}
+.tab-pane {
+    border-bottom: 0;
+}
+#arrows {
+    display: none;
+}
+/* .list-group .active:hover #arrows{
+    display: inline;
+    padding: 0;
+} */
+#category .card-body{
+    max-height: 540px;
+    overflow: auto;
+}
+.modal-title .active {
+    border-bottom: 4px solid #d20911;
+}
+#adicionarItemModal .modal-body {
+    background-color: #f1f2f7;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+#img-upload{
+    width: 100%;
+}
+#produto .form-group {
+    margin-bottom: 5px;
+}
