@@ -11,13 +11,13 @@
 ?>
 <!--Estrutura do Template-->
 <nav class="navbar navbar-dark bg-dark">
-    <span class="navbar-brand mb-0 h1 mr-0">
-        <span id="logo-text">LOGO</span>
+    <span class="navbar-brand mb-0 mr-0">
+        <img src="http://<?=DOMINIO?>/public/img/logo/logo.png" style="width: 180px;" alt="">
     </span>
     <ul class="nav justify-content-center">
         <h3 class="text-white">
             <?php $select = $admin->Select() ?>
-            <?= $select["name"] ?>
+            Admin: <?= $select["name"] ?>
         </h3>
     </ul>
     <ul class="nav justify-content-end">                

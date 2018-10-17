@@ -57,6 +57,7 @@ CREATE TABLE IF NOT EXISTS `DB_courses`.`courses` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `administrators` (`id`, `name`, `email`, `password`) VALUES (NULL, 'Danilo', 'admin@admin.com', '0192023a7bbd73250516f069df18b500');
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

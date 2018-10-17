@@ -10,6 +10,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Login Admin</title>
 
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="http://<?=DOMINIO?>/public/img/icon/book.ico" type="image/x-icon">
+
         <!--cdn Bootstrap CSS file-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -29,9 +32,11 @@
     </style>
     <body>
 
-        <ul class="navbar navbar-expand-lg navbar-dark bg-dark py-3 nav justify-content-center">
+        <ul class="navbar navbar-expand-lg navbar-dark bg-dark nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">LOGO</a>
+                <a href="http://<?=DOMINIO?>/">
+                    <img src="http://<?=DOMINIO?>/public/img/logo/logo.png" alt="">
+                </a>                
             </li>        
         </ul>
         
