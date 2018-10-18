@@ -55,7 +55,7 @@
                         </div>
                         <div class="form-group mb-4">
                             <label for="password">Senha</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Senha">
+                            <input oninput="enter()" type="password" name="password" id="password" class="form-control" placeholder="Senha">
                             <small class="text-danger" style="float: right" id="error_password"></small>
                         </div>
                         <input type="hidden" name="action" value="logar">
@@ -73,5 +73,12 @@
         <script src="http://<?=DOMINIO?>/public/js/popper.js"></script>
         <script src="http://<?=DOMINIO?>/public/js/bootstrap.js"></script>
         <script src="http://<?=DOMINIO?>/public/js/valida-login.js"></script>
+        <script>
+            function enter() {
+                if ($("#email").val() != "") {
+                    $("#btn-login").attr('type', 'submit');
+                }
+            }
+        </script>
     </body>
 </html>

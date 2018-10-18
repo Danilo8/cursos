@@ -61,5 +61,4 @@ $(document).ready(function () {
             $("#btn-login").attr('type', 'button');
         }
     }
-    
 });
